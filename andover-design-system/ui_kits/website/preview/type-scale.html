@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Andover · Type scale</title>
+<link rel="stylesheet" href="_card.css">
+<style>
+  .scale { display: grid; grid-template-columns: 90px 1fr; gap: 8px 18px; align-items: baseline; }
+  .scale .tag { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-soft); }
+  .scale .ex  { color: var(--granate-ink); }
+  .display { font-family: var(--font-display); font-weight: 500; font-variation-settings: 'opsz' 144, 'SOFT' 50; letter-spacing: -0.02em; line-height: 1.04; }
+  .ui { font-family: var(--font-body); }
+  .mono { font-family: var(--font-mono); }
+</style>
+</head>
+<body>
+<div class="card-stage">
+  <div class="scale">
+    <span class="tag">Display</span>
+    <span class="ex display" style="font-size:48px;">Comedores</span>
+
+    <span class="tag">H1</span>
+    <span class="ex display" style="font-size:34px;">Cada centro es distinto</span>
+
+    <span class="tag">H2 / UI</span>
+    <span class="ex ui" style="font-weight:600; font-size:22px; letter-spacing:-0.01em;">Nuestro método</span>
+
+    <span class="tag">Body lg</span>
+    <span class="ex ui" style="font-size:18px; line-height:1.5; color:var(--ink);">Un equipo cercano, una respuesta rápida.</span>
+
+    <span class="tag">Body</span>
+    <span class="ex ui" style="font-size:16px; line-height:1.55; color:var(--ink);">Comedor, limpieza y personal coordinados desde una misma visión.</span>
+
+    <span class="tag">Eyebrow</span>
+    <span class="ex mono" style="font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:var(--granate);">01 · Escuchamos</span>
+  </div>
+</div>
+</body>
+</html>

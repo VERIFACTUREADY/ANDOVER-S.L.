@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Andover · Buttons</title>
+<link rel="stylesheet" href="_card.css">
+<style>
+  .stack { display: flex; flex-direction: column; gap: 18px; }
+  .row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 14px 22px; border-radius: 999px;
+    font-family: var(--font-body); font-weight: 600; font-size: 15px;
+    cursor: pointer; border: 1px solid transparent;
+    transition: transform var(--dur-base) var(--ease-out), box-shadow var(--dur-base) var(--ease-out);
+    letter-spacing: -0.005em;
+  }
+  .btn .arr { font-family: var(--font-mono); font-weight: 400; }
+
+  .btn-primary { background: var(--granate); color: var(--bone); box-shadow: var(--glow-granate); }
+  .btn-primary:hover { background: var(--granate-deep); transform: translateY(-1px); }
+
+  .btn-secondary { background: transparent; color: var(--granate-ink); border-color: var(--granate-ink); }
+  .btn-secondary:hover { background: var(--granate-ink); color: var(--bone); }
+
+  .btn-ghost { background: var(--bone); color: var(--granate-ink); border-color: var(--line-strong); }
+  .btn-ghost:hover { background: var(--cream); }
+
+  .btn-verde { background: var(--verde); color: var(--bone); }
+  .btn-verde:hover { background: var(--verde-deep); }
+
+  .btn-sm { padding: 9px 14px; font-size: 13px; }
+  .lbl { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-soft); }
+</style>
+</head>
+<body>
+<div class="card-stage">
+  <div class="stack">
+    <div class="row">
+      <button class="btn btn-primary">Solicitar información <span class="arr">→</span></button>
+      <button class="btn btn-secondary">Ver servicios</button>
+      <button class="btn btn-ghost">Llamar ahora</button>
+      <button class="btn btn-verde">WhatsApp <span class="arr">↗</span></button>
+    </div>
+    <div class="row">
+      <span class="lbl">Small ·</span>
+      <button class="btn btn-primary btn-sm">Enviar</button>
+      <button class="btn btn-secondary btn-sm">Cancelar</button>
+      <button class="btn btn-ghost btn-sm">Más info</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
