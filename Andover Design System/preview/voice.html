@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Andover · Voice samples</title>
+<link rel="stylesheet" href="_card.css">
+<style>
+  .stack { display: flex; flex-direction: column; gap: 12px; }
+  .line { display: grid; grid-template-columns: 28px 1fr; gap: 14px; align-items: start; padding: 12px 14px; border-radius: 12px; }
+  .line.ok  { background: var(--verde-tint); }
+  .line.no  { background: var(--granate-tint); }
+  .mark { font-family: var(--font-mono); font-weight: 600; font-size: 14px; text-align: center; }
+  .ok .mark { color: var(--verde-deep); }
+  .no .mark { color: var(--granate-deep); }
+  .text { font-family: var(--font-body); font-size: 14px; color: var(--ink); line-height: 1.4; }
+  .no .text { text-decoration: line-through; text-decoration-color: rgba(74,17,26,0.4); }
+  .tag { font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; }
+  .ok .tag { color: var(--verde-deep); }
+  .no .tag { color: var(--granate-deep); }
+</style>
+</head>
+<body>
+<div class="card-stage">
+  <div class="stack">
+    <div class="line ok"><span class="mark">✓</span><div><div class="tag">Cercano · concreto</div><div class="text">Nos encargamos de todo para que el centro pueda centrarse en lo importante.</div></div></div>
+    <div class="line no"><span class="mark">✕</span><div><div class="tag">Vacío · corporativo</div><div class="text">Somos líderes en soluciones integrales de excelencia.</div></div></div>
+    <div class="line ok"><span class="mark">✓</span><div><div class="tag">Resolutivo</div><div class="text">Cada centro tiene su realidad. Por eso cada propuesta de Andover es diferente.</div></div></div>
+    <div class="line no"><span class="mark">✕</span><div><div class="tag">Genérico</div><div class="text">Más de 25 años de experiencia avalan nuestra trayectoria. 🚀</div></div></div>
+  </div>
+</div>
+</body>
+</html>

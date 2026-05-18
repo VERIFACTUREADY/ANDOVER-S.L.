@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Andover · Logo</title>
+<link rel="stylesheet" href="_card.css">
+<style>
+  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .frame { border-radius: var(--radius-lg); padding: 24px; display: grid; place-items: center; min-height: 220px; }
+  .light { background: var(--cream); border: 1px solid var(--line); }
+  .dark  { background: var(--granate-ink); }
+  .frame img { max-width: 220px; width: 100%; height: auto; display: block; }
+  .light img { mix-blend-mode: multiply; }
+  .dark img { filter: invert(1) hue-rotate(180deg) saturate(0.8) brightness(0.95); mix-blend-mode: screen; opacity: 0.95; }
+  .tag { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-soft); display:block; margin-top:8px; }
+</style>
+</head>
+<body>
+<div class="card-stage">
+  <div class="row">
+    <div>
+      <div class="frame light"><img src="../assets/logo-andover-original.jpeg" alt="Andover"></div>
+      <span class="tag">Sobre cream · principal</span>
+    </div>
+    <div>
+      <div class="frame dark"><img src="../assets/logo-andover-original.jpeg" alt="Andover"></div>
+      <span class="tag">Sobre granate · reverso</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>

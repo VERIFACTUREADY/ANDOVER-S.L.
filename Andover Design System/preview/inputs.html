@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Andover · Inputs</title>
+<link rel="stylesheet" href="_card.css">
+<style>
+  .stack { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 16px; }
+  .field { display: flex; flex-direction: column; gap: 6px; }
+  .lbl { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--granate); }
+  .input, .select, textarea {
+    font-family: var(--font-body); font-size: 14px;
+    background: var(--bone); border: 1px solid var(--line-strong);
+    border-radius: 12px; padding: 12px 14px;
+    color: var(--ink); outline: none;
+    transition: border-color var(--dur-base) var(--ease-out), box-shadow var(--dur-base) var(--ease-out);
+  }
+  .input:focus, .select:focus, textarea:focus { border-color: var(--granate); box-shadow: var(--shadow-sm), 0 0 0 3px rgba(122,31,43,0.12); }
+  .focus { border-color: var(--granate)!important; box-shadow: var(--shadow-sm), 0 0 0 3px rgba(122,31,43,0.12); }
+  .err { border-color: var(--granate-deep) !important; }
+  .errmsg { font-family: var(--font-mono); font-size: 10px; color: var(--granate-deep); }
+  .ok { border-color: var(--verde) !important; }
+  textarea { resize: none; height: 64px; font-family: var(--font-body); }
+</style>
+</head>
+<body>
+<div class="card-stage">
+  <div class="stack">
+    <div class="field"><span class="lbl">Nombre</span><input class="input" value="Marta Ruiz"></div>
+    <div class="field"><span class="lbl">Email · focus</span><input class="input focus" value="marta@colegio.es"></div>
+    <div class="field"><span class="lbl">Centro</span><input class="input" placeholder="Colegio San Pablo"></div>
+    <div class="field"><span class="lbl">Email · error</span><input class="input err" value="marta@colegio"><span class="errmsg">Falta el dominio</span></div>
+    <div class="field"><span class="lbl">Motivo</span>
+      <select class="select">
+        <option>Soy un colegio o centro</option>
+        <option>Soy cliente actual</option>
+      </select>
+    </div>
+    <div class="field"><span class="lbl">Mensaje · success</span><textarea class="ok">Recibido. Te contestamos en 24 h.</textarea></div>
+  </div>
+</div>
+</body>
+</html>
