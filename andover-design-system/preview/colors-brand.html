@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Andover · Brand palette</title>
+<link rel="stylesheet" href="_card.css">
+<style>
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .swatch {
+    border-radius: var(--radius-md);
+    padding: 14px 16px;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid rgba(0,0,0,0.04);
+  }
+  .name { font-family: var(--font-body); font-weight: 600; font-size: 14px; }
+  .hex  { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0; opacity: 0.7; }
+</style>
+</head>
+<body>
+<div class="card-stage">
+  <div class="grid">
+    <div class="swatch" style="background:#7A1F2B; color:#FAF8F3;">
+      <span class="name">Granate</span><span class="hex">#7A1F2B · primary</span>
+    </div>
+    <div class="swatch" style="background:#2F6B4F; color:#FAF8F3;">
+      <span class="name">Verde</span><span class="hex">#2F6B4F · trust</span>
+    </div>
+    <div class="swatch" style="background:#4A111A; color:#FAF8F3;">
+      <span class="name">Granate deep</span><span class="hex">#4A111A · hover / depth</span>
+    </div>
+    <div class="swatch" style="background:#DDE9DF; color:#1F4A36;">
+      <span class="name">Verde soft</span><span class="hex">#DDE9DF · section fill</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>

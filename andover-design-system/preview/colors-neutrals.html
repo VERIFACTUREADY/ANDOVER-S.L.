@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Andover · Neutrals</title>
+<link rel="stylesheet" href="_card.css">
+<style>
+  .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .swatch {
+    border-radius: var(--radius-md);
+    padding: 12px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 1px solid var(--line);
+  }
+  .name { font-family: var(--font-body); font-weight: 600; font-size: 12px; }
+  .hex  { font-family: var(--font-mono); font-size: 10px; opacity: 0.65; }
+</style>
+</head>
+<body>
+<div class="card-stage">
+  <div class="grid">
+    <div class="swatch" style="background:#FAF8F3;">
+      <span class="name">Bone</span><span class="hex">#FAF8F3</span>
+    </div>
+    <div class="swatch" style="background:#F6F1E8;">
+      <span class="name">Cream</span><span class="hex">#F6F1E8 · default bg</span>
+    </div>
+    <div class="swatch" style="background:#E7E0D2;">
+      <span class="name">Line</span><span class="hex">#E7E0D2</span>
+    </div>
+    <div class="swatch" style="background:#6E6A64; color:#FAF8F3;">
+      <span class="name">Ink soft</span><span class="hex">#6E6A64</span>
+    </div>
+    <div class="swatch" style="background:#A9A39A; color:#FAF8F3;">
+      <span class="name">Ink mute</span><span class="hex">#A9A39A</span>
+    </div>
+    <div class="swatch" style="background:#111111; color:#FAF8F3;">
+      <span class="name">Ink</span><span class="hex">#111111 · body</span>
+    </div>
+    <div class="swatch" style="background:#F1E2E4;">
+      <span class="name">Granate tint</span><span class="hex">#F1E2E4</span>
+    </div>
+    <div class="swatch" style="background:#EAF1EC;">
+      <span class="name">Verde tint</span><span class="hex">#EAF1EC</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>
